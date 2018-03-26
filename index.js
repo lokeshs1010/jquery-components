@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(document).ready( () => {
     // Collapse jquery function
      $(".heading").click(function () {
        $(this).next().slideToggle();
@@ -8,17 +8,17 @@ $(document).ready(function () {
 
 
      // Navbar jquery function
-     $(".bar").click(function(){
+     $(".bar").click( () => {
        $('ul').toggleClass('activeBar');
      })
 
 
      // Modal jquery function
-     $(".open").on("click", function () {
+     $(".open").on("click", () => {
        $(".overlay, .modal").addClass("active");
      });
 
-     $(".close, .overlay").on("click", function () {
+     $(".close, .overlay").on("click", () => {
        $(".overlay, .modal").removeClass("active");
      });
 });
