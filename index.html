@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar component -->
+    <div class="nav">
+        <div class="toggle">
+            <div class="logo">
+                <h3>Jquery Navbar</h3>
+            </div>
+            <div class="but">
+                <button class="bar">
+                    <img src="./bars.png" alt="bar" style="width:40px;">
+                </button>
+            </div>
+        </div>
+        <ul>
+            <li class="act">
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+            <li>
+                <a href="#">Potfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Navbar component ends -->
+    <hr>
+    <!-- Modal component -->
+    <h2>Modal Example</h2>
+    <div class="overlay"></div>
+    <div class="modal">
+        <h2>Quotes by Albert Einstein</h2>
+        <p>1 - Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.
+            <br>2 - Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life
+            believing that it is stupid.
+            <br>3 - A person who never made a mistake never tried anything new.</p>
+        <button class="close" id="exit">
+            <strong>Close</strong>
+        </button>
+    </div>
+    <button class="open">Open Modal</button>
+    <!-- Modal component ends-->
+    <hr>
+    <hr>
+    <!-- Collapse component - accordion format -->
+    <h2>Accordion Example</h2>
+    <div class="collapse">
+        <div class="block">
+            <div class="heading">
+                Story 1
+            </div>
+            <div class="content">
+                Avul Pakir Jainulabdeen Abdul Kalam hailed from a very humble background. His father was a boat owner. To help his family,
+                Kalam would work as a newspaper vendor. With limited resources, he graduated in Physics and studied aerospace
+                engineering. He was instrumental in India's step towards nuclear energy. In 2002, he became the 11th President
+                of India
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="heading">
+                Story 2
+            </div>
+            <div class="content">
+                Dhirajlal Hirachand Ambani, more popularly known as Dhirubhai Ambani, is the founder of Indian business behemoth Reliance
+                Industries. Dhirubhai's father was a man of limited means. To make ends meet, Dhirubhai used to sell oils
+                and fritters. The scale of his success, even after his death, is known to every Indian. The total asset value
+                of the Reliance Industries, at present, is over 85 billion dollars
+            </div>
+        </div>
+
+        <div class="block">
+            <div class="heading">
+                Story 3
+            </div>
+            <div class="content">
+                The father of Infosys, Nagavara Ramarao Narayana Murthy used to work for a lesser known IT firm named Patni Computer Systems.
+                When Murthy started out to set up Infosys, he had nothing but his wife's saving of Rs 10,000. Now, his company's
+                total asset value is over 10.5 billion dollars
+            </div>
+        </div>
+        <!-- Collapse component - accordion format ends-->
+    </div>
+    <hr>
+    <!-- JavaScript  -->
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

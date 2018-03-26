@@ -1,0 +1,182 @@
+:root {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 241, 241);
+    font-family: 'Roboto', sans-serif;
+}
+
+.heading {
+    cursor: pointer;
+    border: 1px solid grey;
+    padding: 1rem;
+    background-color: #eee;
+    color: #487EAB;
+    font-size: 1.5rem;
+}
+
+.content {
+    display: none;
+    padding: 1rem;
+    border: 1px solid gray;
+    background: whitesmoke;
+}
+
+.heading:hover {
+    font-weight: 600;
+    background-color: #ccc;
+}
+
+.nav {
+    width: 100vw;
+    background: #333;
+}
+
+ul {
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3vh;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background: #17A2B8;
+    color: black;
+}
+
+.act {
+    background: #007BFF;
+}
+
+.toggle {
+    width: 100vw;
+    background: #333;
+    box-sizing: border-box;
+    display: none;
+}
+.logo {
+    width: 90vw;
+    color: white;
+    margin-bottom: 0;
+}
+.but{
+    padding: 1vh;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: .5s ease;
+    z-index: -1;
+}
+
+.overlay.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 75vw;
+    transform: translate(-50%, -50%);
+    background: #007BFF;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.open, .close {
+    padding: 1vw;
+    margin: 0 5vw;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 15px;
+}
+
+.open:hover {
+    background-color: rgb(2, 80, 163);
+}
+
+#exit {
+    background-color: rgb(2, 80, 163);
+    margin: 0;
+    border-radius: 0;
+}
+
+#exit:hover {
+    background-color: rgb(1, 36, 73);
+}
+
+@media (min-width:768px) {
+    .collapse {
+        margin: 0 5vw;
+    }
+    .modal {
+        width: 50vw;
+    }
+}
+
+@media (max-width:768px) {
+    .toggle {
+        display: flex;
+        justify-content: flex-end;
+    }
+    ul {
+        width: 100vw;
+        display: none;
+    }
+    ul li {
+        display: flex;
+        justify-content: center;
+    }
+    .activeBar {
+        display: flex;
+        flex-direction: column;
+    }
+    .collapse {
+        margin: 0 10vw;
+    }
+}
+
+@media (max-width:480px) {
+    .collapse {
+        margin: 0 5vw;
+    }
+    .modal {
+        width: 95vw;
+    }
+}
